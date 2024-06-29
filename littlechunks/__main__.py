@@ -1,4 +1,4 @@
-from chunks.__init__ import main
+from littlechunks.__init__ import main
 
 if __name__ == "__main__":
     main()

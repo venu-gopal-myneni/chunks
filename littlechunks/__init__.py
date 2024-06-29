@@ -1,5 +1,5 @@
-from chunks.csv import split_csv_file
-from chunks.utils import get_args
+from littlechunks.csv import split_csv_file
+from littlechunks.utils import get_args
 
 
 def main():
