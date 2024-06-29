@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chunks"
+version = "0.0.1"
+requires-python = ">=3.11"
+dependencies = [
+    "pre-commit",
+    "pytest",
+    "coverage"
+]
+
+[tool.setuptools.packages.find]
+namespaces = true
+include = ["chunks*"]
+
+[tool.setuptools.package-data]
+"chunks.data" = ["*.csv"]
+
+
+[project.scripts]
+chunks = "chunks:main"
